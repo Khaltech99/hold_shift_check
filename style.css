@@ -1,0 +1,54 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: rgb(251, 193, 45);
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px rgb(243, 191, 59);
+            margin: 1rem;
+            padding: 1rem;
+            width: 80%;
+            padding-right: 0;
+        }
+        
+        label {
+            margin-left: 1rem;
+            flex: 1;
+            font-family: 'helvetica neue';
+            font-size: 20px;
+            font-weight: 200;
+            border-left: 1px solid #D1E2FF;
+            padding: 20px;
+        }
+        
+        input {
+            margin: 0;
+            padding: 0;
+            margin-top: 25px;
+        }
+        
+        input:checked~label {
+            text-decoration: line-through;
+            background-color: rgb(247, 248, 250);
+        }
+        
+        .wrap {
+            display: flex;
+            margin: 5px;
+            border-bottom: 1px solid rgb(229, 228, 228);
+            border-width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        @media screen and (min-width:768px) {
+            .section {
+                max-width: 500px;
+                margin: 1rem auto;
+            }
+        }
